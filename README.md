@@ -4,7 +4,7 @@ Lorenzo Ferrante e Saverio Solimani
 
 Il progetto è consistito in un'analisi temporale dei progetti di Digital Humanities realizzati in Italia e in Spagna negli ultimi 30 anni, tramite canali di finanziamento pubblici, prendendo come riferimenti principali i dataset non aggregati *Italian Digital Humanities Projects* (https://zenodo.org/records/19003595) e *Mapping digital humanities projects in Spain - 1993-2019* (https://zenodo.org/records/3893546).
 
-Per quanto riguarda l'Italia, è stato ritenuto utile un confronto fra i progetti DH (estratti fra i progetti risultati vincitori nei settori SH) dei bandi ministeriali PRIN 2022 e PRIN 2022 PNRR, per verificare l'impatto del PNRR sul finanziamento alla ricerca DH. Di seguito una breve spiegazione di come sono stati ottenuti questi dati.
+Per quanto riguarda l'Italia, è stato ritenuto utile un confronto fra i progetti DH (selezionati fra i progetti risultati vincitori nei settori SH) dei bandi ministeriali PRIN 2022 e PRIN 2022 PNRR, per verificare l'impatto del PNRR sul finanziamento alla ricerca DH. Di seguito una breve spiegazione di come sono stati ottenuti questi dati.
 
 **PRIN 2022 - Scraping**
 
