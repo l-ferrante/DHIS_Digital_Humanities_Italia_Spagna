@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHIS - articolo</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div id="header">
+        <a id="home" href="index.html"><img src="img/icone/home.png" alt="Home">DHIS</a>
+        <a href="articolo.html" class="here"> <img src="img/icone/articolo.png" alt="Articolo">Data Story</a>
+        <a href="intervista.html"><img src="img/icone/microfono.png" alt="About">L'intervista</a>
+        <a href="dati.html"><img src="img/icone/dati.png" alt="Dati">Sui dati</a>
+        <a href="digital_humanities.html"><img src="img/icone/computer.png" alt="Digital Humanities">DH</a>
+        <a href="about.html"><img src="img/icone/about.png" alt="About">About</a>
+    </div>
+
+
+    <div class="corpo">
+        <header class="article-header">
+        <h1>La sfida delle <span class="evidenza">Digital Humanities</span>  : finanziamenti, difficoltà e prospettive future</h1>
+        </header>
+        
+        <article class="article-body">
+        
+        <!-- Sezione 1: Introduzione -->
+        <div class="sezione">
+          <p>
+            Esistono, <span class="grassetto">all'intersezione tra informatica e discipline umanistiche</span>, un campo di studi e un'area di ricerca che,
+            <a href="digital_humanities.html">nati tra 50 e 60 anni fa</a>, oggi godono di una particolare attenzione, a causa, tra le altre cose, dello
+            spopolare in ogni dove dei <span class="grassetto corsivo">Large Language Model</span> (Chat GPT, Gemini, Claude, e tutto il parentado): sono le
+            <span class="grassetto corsivo">Digital Humanities</span>, o la nuova frontiera dell'umanesimo.
+          </p>
+          <p class="commento">
+            Ma qual è, davvero, lo stato di salute del settore in <span class="grassetto">Italia</span>?
+            E come se la cava il resto d'<span class="grassetto">Europa</span>?
+            Quali sono le <span class="grassetto">prospettive</span> della disciplina?
+            Come si gestisce un <span class="grassetto">progetto</span> di <span class="corsivo">Digital Humanities</span>
+            e quali sono i canali di <span class="grassetto">finanziamento</span> a cui esso può aspirare?
+            <br>
+            <br>
+            Ma <span class="grassetto">«Dati, dati, dati! Non posso fare mattoni senza argilla»</span>
+            diceva <span class="grassetto">Sherlock Holmes</span>,
+            e quindi era lì (nei dati!) che bisognava cercare le risposte a queste e ad altre domande.
+            <br>
+            E allora abbiamo cercato, trovato, costruito dati: e lì (nei dati!) c'erano alcune risposte.
+          </p>
+        </div>
+          
+          
+        <!-- Sezione 2: analisi del dataset italiano -->
+        <div class="sezione">
+          <h2>1. Italia: l'asse temporale e la distribuzione spaziale</h2>
+          <p>
+            Lo studio <a href="https://aiucd2025.dlls.univr.it/assets/pdf/papers/36.pdf" target="_blank" class="grassetto corsivo">Life and Death of DH Projects: A Preliminary Investigation
+            of Their Lifecycles in Italy</a>, del giugno 2025, ha tra i suoi risultati un dataset, <a href="https://zenodo.org/records/19003595" target="_blank" class="grassetto corsivo">Italian Digital Humanities Projects</a>,
+            costruito per essere un <span class="grassetto">aggregatore</span>, da numerose e svariate fonti, di <span class="grassetto">progetti di DH sviluppati in Italia tra il 1995 e il 2024</span>.
+          </p>
+
+          <div>
+            <!-- Blocco grafici-commenti -->
+            <div class="gr_com_block">
+              
+              <p class="commento">
+                L'analisi temporale dei dati mostra una <span class="grassetto">crescita lenta ma piuttosto costante</span>
+                del numero dei progetti pubblicati nel corso degli anni, con un <span class="grassetto">picco tra 2020 e 2022</span> a cui
+                con buona probabilità hanno contribuito anche le restrizioni dovute al covid.
+              </p>
+
+              <img src="img/grafici/italia_progetti_per_anno_1998_2024.png" alt="Numero di progetti di DH sviluppati in Italia, per anno (1998 - 2024)"/>
+              
+
+              <p class="commento">
+                Sicuramente non stupisce che <span class="grassetto">Roma</span> (sede di tre università, ministeri, centri di ricerca),
+                e <span class="grassetto">Bologna</span> (la cui università è fra le più grandi d'Italia) siano sul <span class="grassetto">podio</span>.
+                <br>
+                Potrebbe forse apparire più sorprendente la presenza di <span class="grassetto">Pisa</span> in seconda posizione, ma bisogna considerare che la città, nota per essere la 
+                sede di una <span class="grassetto">grande università</span> e di <span class="grassetto">due scuole universitarie superiori di eccellenza</span>, ospita
+                anche le sedi principali dell'<span class="grassetto">Istituto di Linguistica Computazionale (ILC)</span> e 
+                dell'<span class="grassetto">Istituto di Scienza e Tecnologia dell'Informazione (ISTI)</span>, nonché di altri istituti del <span class="grassetto">Consiglio Nazionale delle Ricerche (CNR)</span>,
+                i quali, difatti, si dimostrano piuttosto attivi in quanto a progetti sviluppati (rispettivamente 10 e 8).
+              </p>
+
+              <img src="img/grafici/italia_top_15_citta_1998_2024.png" alt="I poli italiani delle DH per numero di progetti (1998 - 2024), top 15"/>
+
+              <img src="img/grafici/italia_top_15_enti_1998_2024.png" alt="I 15 enti più attivi nelle DH in Italia">
+              
+            </div>
+          </div>
+        </div>
+
+
+        
+      <div class="sezione">
+        <!-- Sezione 3: il confronto con la Spagna -->
+        <h3>1.1 La Spagna: un confronto europeo</h3>
+        <p>
+          Ma come se l'è cavata la Spagna, Paese paragonabile all'Italia per cultura, dimensioni e società, nello
+          stesso arco di tempo?
+          La risposta l'abbiamo ottenuta analizzando i dati contenuti nel dataset
+          <a href="https://zenodo.org/records/3893546" target="_blank" class="grassetto corsivo">Mapping digital humanities projects in Spain</a>,
+          che raccoglie dati su <span class="grassetto">371 progetti di DH pubblicati in Spagna tra il 1995 e il 2022</span>.
+        </p>
+
+        <div>
+          <!-- Blocco grafici-commenti -->
+          <div class="gr_com_block">
+
+            <p class="commento">
+              Dal punto di vista termporale emerge anche in questo caso un quadro di <span class="grassetto">crescita lenta ma discontinua</span>, che ha il suo <span class="grassetto">picco nel 2018</span>,
+              quindi qualche anno prima rispetto all'Italia.
+            </p>
+
+            <img src="img/grafici/spagna_progetti_per_anno_1995_2022.png"/>
+
+            <p class="commento">
+              Dal punto di vista geografico si nota, invece, come siano le istituzioni delle città più grandi,
+              <span class="grassetto">Barcellona e Madrid</span> a portare avanti il maggior numero di progetti.
+            </p>
+
+            <img src="img/grafici/spagna_top_15_enti_1995_2021.png"/>
+          </div>
+        </div>
+
+        <p>
+          Inoltre, <a href="https://dh2020.adho.org/wp-content/uploads/2020/07/187_EvolucinyescenarioactualdelasHumanidadesDigitalesenEspaa.html" target="_blank">uno studio del 2020</a>
+          condotto su <span class="grassetto">368 progetti</span> di DH in Spagna, inoltre, ha evidenziato alcuni punti interessanti:
+        </p>
+        <ul>
+          <li>
+            <p>
+            Un interessante bilanciamento di genere tra chi si occupa di ricerca:
+            <span class="grassetto">52,9% uomini e 47,1% donne</span>.
+            Questo rapporto è più equilibrato rispetto alla media della ricerca generale in Spagna (61,2% vs 38,8%)
+            e alle sole discipline umanistiche tradizionali.
+            </p>
+          </li>
+          <li>
+            <p>
+            Per quanto riguarda le discipline, prevalgono i progetti di <span class="grassetto">filologia (36%)</span>,
+            seguiti da quelli di <span class="grassetto">storia (16,5%)</span>
+            e di <span class="grassetto">informatica (10,8%)</span>.
+            </p>
+          </li>
+        </ul>
+      </div>
+  
+
+        <!-- Sezione 4: finanziamenti e progetti PRIN -->
+      <div class="sezione">
+        <h2>2. Finanziamenti: chi paga la ricerca? Il sistema dei PRIN</h2>
+        <p>
+          In <span class="grassetto">Spagna</span>, lo studio ha rilevato che <span class="grassetto">il 72% dei finanziamenti</span>
+          proviene da fondi ministeriali, quindi pubblici, mentre solo il 10% dal settore privato.
+          Ogni progetto riceve in media un finanziamento di 64.313 €, ma quello mediano ne riceve 42.350 €, e questo
+          indica una certa disuguaglianza nella distribuzione delle risorse.
+        </p>
+        <p>
+          In <span class="grassetto">Italia</span>, il quadro dei finanziamenti è dominato dai bandi
+          <span class="grassetto">PRIN</span> (Progetti di Rilevante Interesse Nazionale).
+        </p>
+        <p>
+          Abbiamo quindi raccolto e analizzato i dati dal sito del <span class="grassetto">Ministero dell'Università</span> per quanto riguarda
+          i progetti finanziati con il <span class="grassetto">PRIN 2022</span> e con il <span class="grassetto">PRIN 2022 PNRR</span>.
+        </p>
+
+        <div id="prin_2022">
+          <p class="commento">
+            <span class="grassetto">PRIN 2022</span>
+            <br>
+            Secondo le nostre analisi il PRIN 2022 ha finanziato <span class="grassetto">51 progetti di Digital Humanities</span>,
+            per un totale di <span class="grassetto">poco meno di 12,5 milioni di euro</span>, con ogni progetto che ha ricevuto
+            <span class="grassetto">in media circa 243,5 mila euro</span> e con una distribuzione delle risorse estremamente
+            <span class="grassetto">equilibrata (mediana 246 mila euro)</span>.
+
+          </p>
+        </div>
+
+        <div id="prin_2022_pnrr">
+          <p class="commento">
+            <span class="grassetto">PRIN 2022 PNRR</span>
+            <br>
+            Secondo i dati ufficiali forniti dall'agenzia governativa <a href="https://www.italiadomani.gov.it/content/sogei-ng/it/it/il-piano/missioni-pnrr/istruzione-e-ricerca.html" target="_blank" class="grassetto">Italia domani</a>,
+            <span class="grassetto">30 dei 194 miliardi di euro del PNRR sono destinati a istruzione e ricerca (quasi il 15,5%)</span>.
+            <br>
+            Di questi 30 miliardi, 808 milioni sono stati spesi, per esempio, in borse di studio per l'accesso all'università,
+            510 milioni per finanziare borse di dottorato supplementari, e, ancora, <span class="grassetto">1,8 miliardi di euro</span>
+            per finanziare il bando <span class="grassetto">PRIN 2022 PNRR</span>.
+            <br>
+            In breve, <span class="grassetto">quasi l'1% dell'intero PNRR è stato destinato al bando PRIN 2022 PNRR</span>: 5.350 progetti finanziati,
+            nei più svariati ambiti di ricerca, con livelli e standard di sostenibilità ambientale dettati dalle direttive UE.
+            <br>
+            <br>
+            Ora: di questi, secondo le nostre analisi, <span class="grassetto">88 erano progetti di Digital Humanities</span>: per un
+            investimento in questo ambito che si aggira sui <span class="grassetto">20 milioni di euro</span>, con ogni progetto finanziato mediamente
+            per <span class="grassetto">230 mila euro</span>, con una distribuzione delle risorse <span class="grassetto">equilibratissima (mediana 230 mila euro)</span>.
+          </p>
+        </div>
+
+
+        
+        In breve:
+        <div class="gr_com affiancati">
+          <img src="img/grafici/italia_numero_progetti_prin_vs_pnrr.png" alt="">
+          <img src="img/grafici/italia_finanziamento_progetti_prin_vs_pnrr.png" alt="">
+        </div>
+
+      </div>
+
+
+      <div class="sezione">
+        <div>
+          <div>
+            <h3>2.1 Analisi di un progetto di DH: il caso MaximHum</h3>
+            <p>
+              Tra i progetti finanziati dal PRIN 2022 PNRR c'è il <a href="https://maximhum.fileli.unipi.it" target="_blank" class="grassetto">progetto MaximHum</a>,
+              un progetto in collaborazione tra Università di <span class="grassetto">Pisa</span>, Università di <span class="grassetto">Chieti e Pescara</span>
+              e Università di <span class="grassetto">Bologna</span>.
+            </p>
+            <p>
+              Il progetto, sviluppato tra il 2023 e l'inizio del 2026, mirava alla <span class="grassetto">costruzione di un
+              archivio digitale di testi codificati digitalmente di Massimo il Greco</span>, importante umanista bizantino attivo tra Quattrocento e Cinquecento
+              tra la <span class="grassetto">Moscovia</span> e l'<span class="grassetto">Italia</span>.
+            </p>
+            <p>
+              La professoressa <span class="grassetto">Francesca Romoli</span>, docente
+              di slavistica all'Università di Pisa e <span class="corsivo">Principal Investigator</span> del progetto,
+              ci ha parlato dell'<span class="grassetto">importanza della collaborazione tra professionalità diverse e complementari</span>
+              e del <span class="grassetto">valore dell'investimento pubblico nella ricerca</span>.
+            </p>
+          </div>
+
+          <div id="cont_max_greco">
+            <img src="img/massimo_greco.jpg" alt="Massimo il Greco">
+          </div>
+        </div>
+
+        <p class="commento citazione">
+          «<br>
+          Il nostro progetto partiva da zero e <span class="grassetto">senza la cornice del PRIN PNRR non sarebbe stato possibile</span>,
+          anche per l’incrocio di competenze. 
+          Il PRIN PNRR è stato importante in maniera particolare perché ha permesso e finanziato la costruzione di un
+          <span class="grassetto">gruppo di ricerca ampio e interdisciplinare</span>, composto anche di ricercatori a tempo pieno i quali, a differenza di 
+          un docente strutturato con obblighi di didattica, possono contribuire con maggiore efficienza a progetti di ricerca così ambiziosi.
+          <br>
+          [...]
+          <br>
+          una volta che esiste un archivio digitale, <span class="grassetto">si aprono orizzonti di ricerca prima impensabili</span>,
+          anche per testi antichi con caratteristiche linguistiche complesse.
+          <br>»
+
+          <br>
+        </p>
+
+        E sulla possibilità di un maggiore <span class="grassetto">coinvolgimento di aziende private</span>
+        nel settore delle <span class="corsivo">Digital Humanities</span>, o, in generale, di
+        <span class="grassetto">più elevati investimenti privati</span> nel settore:
+        <p class="commento citazione">
+          «<br>
+          Non sono sicura di quanto un ente privato possa individuare tematiche settoriali in cui sviluppare i prodotti; in ogni caso
+          abbastanza spesso e soprattutto per le questioni informatiche circa le infrastrutture digitali, la collaborazione tra
+          pubblico e privato è già oggi importante.
+          Ciò che è sicuro è che operando <span class="grassetto">nella ricerca pubblica nessuno ci dice cosa dobbiamo o non dobbiamo fare</span>:
+          la ricerca pubblica ha <span class="grassetto">la garanzia e privilegio di essere pubblica, e quindi libera</span>.
+          <br>»
+
+          <br>
+          <br>
+          (Leggi <a href="intervista.html" target="_blank" class="grassetto">qui</a> l'intervista integrale)
+        </p>
+
+      </div>
+
+
+
+        <!-- Sezione 5: Conclusione -->
+        <h2>3. Conclusioni. Verso il futuro: sfide e prospettive delle DH</h2>
+        <p>
+          Le nostre analisi hanno evidenziato come il settore delle Digital Humanities sia in costante crescita: il fatto
+          che PRIN 2022 e PRIN 2022 PNRR abbiano finanziato <span class="grassetto">139 progetti</span> significa che tra 2025 e 2026
+          sono stati pubblicati o saranno a breve pubblicati 139 tra <span class="grassetto">archivi digitali</span>,
+          <span class="grassetto">edizioni elettroniche</span>,
+          <span class="grassetto">digitalizzazioni di patrimonio letterario o culturale</span>,
+          <span class="grassetto">studi o prodotti di linguistica computazionale</span>; insomma: 139 nuovi esemplari
+          <span class="grassetto">di umanesimo che si affaccia nel futuro</span>.
+        </p>
+        <p>
+          Però la sfida per gli anni a venire non sarà solo tecnologica, ma anche politica ed economica: come incentivare il <span class="grassetto">finanziamento</span>,
+          la <span class="grassetto">diffusione</span> e la <span class="grassetto corsivo">fruizione</span> di
+          nuovi progetti di <span class="corsivo">Digital Humanities</span>? Un maggiore coinvolgimento del
+          <span class="grassetto">settore privato</span> è possibile? La <span class="grassetto">mancanza dei fondi PNRR</span> si farà sentire?
+        </p>
+        
+        <p>Noi un po' di mattoni li abbiamo messi, ma adesso tocca a te: se questa storia ti è piaciuta, condividila o inviaci un commento alle mail che trovi in fondo alla pagina!</p>
+
+
+      </article>
+    </div>
+
+    <div id="footer">
+        <a href="https://www.fileli.unipi.it/informatica-umanistica-lm/" target="_blank">
+            <span class="grassetto">Università di Pisa <br>
+            Corso di laurea in Informatica Umanistica</span>
+            <br>
+            <span>Anno accademico 2025-2026</span>
+        </a>
+
+        <div id="cont_autori">
+            <a href="about.html">
+                <span class="grassetto">Autori</span>
+                <br>
+                <span><a href="mailto:l.ferrante9@studenti.unipi.it">Lorenzo Ferrante</a>
+                <br>
+                <span><a href="mailto:s.solimani1@studenti.unipi.it">Saverio Solimani</a></span>
+            </a>
+        </div>
+
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+            <span class="grassetto">Licenza</span>
+            <br>
+            <span>CC BY NC SA</span>
+        </a>
+    </div>
+</body>
+
+
+</html>

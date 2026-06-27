@@ -1,0 +1,290 @@
+html{font-family: 'Noto sans', Arial, Helvetica, sans-serif;}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+a:hover{font-weight: bold;}
+
+#corpo, #header, #footer, #autori, #dataset, #metodologia{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    box-sizing: border-box;
+}
+
+#corpo p{padding: 5%;}
+
+#header{background: linear-gradient(to right, rgb(0, 102, 204), rgb(0, 80, 160));}
+
+#header a{
+    padding: 2%;
+    color: white;
+    font-weight: bold;
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#header a img{width: 25px;}
+
+#header a:hover {
+    background-color: rgba(0, 102, 204, 0.7);
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+#home{
+    margin-right: auto;
+    font-family: 'Caveat', 'Times New Roman', Times, serif;
+    font-size: 150% !important;
+    display: flex;
+    align-items: center;
+    gap: 5px !important;
+    padding: 0 0 0 1% !important;
+}
+
+#home img{width: 35px !important;}
+
+#copertina {
+    padding: 12.5% 5%;
+    background-image: url("img/sfondo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#copertina h1{font-size: 250%;}
+
+#copertina div {
+    background-color: rgba(198, 167, 42, 0.4);
+    width: 55%;
+    border-radius: 24px;
+    padding: 2%;
+    position: relative;
+    bottom: 100px;
+}
+
+#abstract{
+    text-align: center;
+    padding: 3%;
+    font-size: 100%;
+}
+#abstract a{
+    text-decoration: underline;
+}
+
+#corpo{align-items: stretch !important;}
+#corpo a{
+    flex: 1;
+    text-align: center;
+    font-size: 100%;
+    padding: 3%;
+}
+
+#corpo .evidenza{font-size: 200%;}
+
+#corpo a:hover {
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+#ds{background-color: rgb(94, 185, 94);}
+#ds:hover{background-color: rgb(94, 185, 94, 0.8)}
+
+#dh{background-color: rgb(210, 180, 140);}
+#dh:hover{background-color: rgb(210, 180, 140, 0.8);}
+
+#int{background-color: rgb(94, 140, 185);}
+#int:hover{background-color: rgb(94, 140, 185, 0.8);}
+
+.spiegazione{
+    font-weight: normal;
+    padding-top: 1% !important;
+}
+
+#footer{
+    color: white;
+    align-items: center; 
+    padding: 1%;
+    font-size: 85%;
+    margin-top: auto;
+
+}
+
+#footer{background: linear-gradient(to left, rgb(0, 102, 204), rgb(0, 80, 160));}
+
+#footer a{
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.grassetto{font-weight: bold;}
+.corsivo{font-style: italic;}
+
+.evidenza{
+    color: rgb(0, 102, 204);
+    font-family: 'Caveat', 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+.corpo{padding: 1% 5%;}
+.corpo .evidenza{font-size: 150%;}
+
+.domanda{font-weight: bold;}
+
+#autori{text-align: center;}
+#autori a{text-decoration: underline;}
+
+.piccolo{font-size: 70%;}
+
+#dataset, #metodologia{
+    align-items: baseline !important;
+    margin: 0 1%;
+    gap: 25px;
+}
+#dataset div, #metodologia div{
+    flex: 1;
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 16px;
+    padding: 1.5%;
+    margin-bottom: 5%;
+    transition: border ease-in-out 0.1s;
+}
+
+#dataset div:hover, #metodologia div:hover{
+    border: 2px black solid;
+}
+
+#dataset a, #metodologia a{
+    text-decoration: underline;
+}
+
+.here{
+    background-color: rgb(0, 0, 160);
+    transition: all 0.2s ease-in-out;
+}
+.here:hover{background-color: rgb(0, 0, 160, 0.4) !important;}
+
+
+
+
+/* Layout Articolo */
+.article-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.article-header h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+/* Tipografia Articolo */
+.article-body p {
+    line-height: 1.8;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.article-body h2 {
+    color: #2c3e50;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #b2c4c9;
+    padding-bottom: 0.5rem;
+}
+
+.article-body h3 {
+    color: #34495e;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.gr_com{
+    display: flex;
+    text-align: center;
+}
+.gr_com_block{
+    display: block;
+}
+
+.gr_com *, .gr_com_block{
+    flex: 1;
+}
+
+.gr_com_block img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  margin-bottom: 4%;
+}
+
+.gr_com img {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding: 0 2.5% 0 2.5%;
+}
+
+.commento {
+    background-color: rgb(184, 203, 225);
+    border-left: 5px solid #3498db;
+    border-radius: 0 12px 12px 0;
+    padding: 2%;
+}
+
+
+article a{
+    text-decoration: underline;
+}
+
+
+.affiancati img{
+    width:45%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.sezione{
+    margin: 5% 0 5% 0;
+}
+.sezione > div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#cont_max_greco {
+    width: 100%;
+}
+
+#cont_max_greco img {
+    width: 100%;
+    height: auto;
+}
+
+.citazione{
+    font-size: 90%;
+}
+
+#cont_autori{
+    text-align: center;
+}

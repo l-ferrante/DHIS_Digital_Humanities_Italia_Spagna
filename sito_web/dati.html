@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHIS - dati</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <div id="header">
+        <a id="home" href="index.html"><img src="img/icone/home.png" alt="Home"> DHIS</a>
+        <a href="articolo.html"> <img src="img/icone/articolo.png" alt="Articolo">Data Story</a>
+        <a href="intervista.html"><img src="img/icone/microfono.png" alt="About">L'intervista</a>
+        <a href="dati.html" class="here"><img src="img/icone/dati.png" alt="Dati">Sui dati</a>
+        <a href="digital_humanities.html"><img src="img/icone/computer.png" alt="Digital Humanities">DH</a>
+        <a href="about.html"><img src="img/icone/about.png" alt="About">About</a>
+    </div>
+
+
+    <div class="corpo">
+        <h2>Dataset, dati e tecniche utilizzate</h2>
+        <div id="dataset">
+
+           <div>
+                <h3>1. Italian Digital Humanities Projects</h3>
+                <p>
+                    Dataset che comprende le informazioni su centinaia di progetti di Digital Humanities
+                    realizzati da enti di ricerca o università italiane fra il 1998 e il 2024.
+                    Come specificato dagli autori, sono stati inclusi i soli progetti che hanno degli output pubblicamente
+                    accessibili tramite un sito web o un'edizione digitale dedicati.
+                    I risultati sono stati aggiornati l'ultima volta nell'aprile 2025.
+                </p>
+
+                <p>
+                    I dati sono liberamente consultabili sulla piattaforma Zenodo
+                    (<a href="https://zenodo.org/records/19003595" target="_blank" class="grassetto">Italian Digital Humanities Projects</a>)
+                    e sono stati raccolti da risorse multiple, come <a href="http://dhawards.org/" target="_blank" class="grassetto">DH awards</a>,
+                    il catalogo <span class="grassetto">KNOT</span> e quello delle <span class="grassetto">Edizioni Digitali</span>,
+                    un precedente dataset e da procedimenti di conferenze AIUCD e IRCDL.
+                </p>
+                <p>
+                    Per ogni progetto sono riportati l'istituzione (o la collaborazione d'istituzioni) responsabile,
+                    il titolo, l'URL del suo sito (quando accessibile), la pagina d'atterraggio associata al progetto,
+                    l'origine dei dati, eventuali note, le date della prima e dell'ultima archiviazione del sito su
+                    Wayback Machine.
+                </p>
+            </div>
+
+            <div>
+                <h3>2. Mapping digital humanities in Spain</h3>
+                <p>
+                    Dataset che comprende i progetti di DH realizzati in enti di ricerca o università spagnole
+                    fra il 1995 e il 2022.
+                </p>
+                <p>
+                    I dati sono disponibili sulla piattaforma <a href="https://zenodo.org/records/3893546" target="_blank" class="grassetto">Zenodo</a>
+                    e sono una versione aggiornata di un precedente <a href="https://github.com/linhd-postdata/desir/tree/v1.0" target="_blank" class="grassetto">repository Github</a>
+                    e sono relativi a uno studio pubblicato in open access, finanziato dalla Commissione Europea nell'ambito dei
+                    programmi POSTDATA e DESIR.
+                </p>
+                <p>
+                    Per ogni progetto sono indicati il titolo, un codice identificativo interno all'istituzione
+                    che lo promuove, l'area disciplinare coinvolta, il tema di ricerca, eventuale programma e
+                    subprogramma delle attività, eventuale parola chiave AEI, anno di inizio e di fine (che corrispondono),
+                    l'entità finanziatrice, la pagina web, la fonte d'informazione, la città dove ha sede l'ente promotore,
+                    l'ente promotore e il suo centro specifico, la data dell'ultimo aggiornamento.
+                </p>
+            </div>
+            
+            <div>
+                <h3>3. Progetti DH nei bandi PRIN 2022 e PRIN 2022 PNRR</h3>
+                <p>
+                   Dataset creato da noi tramite scraping di allegati C e D dei rispettivi bandi MUR:
+                   <a href="https://www.mur.gov.it/it/atti-e-normativa/decreto-direttoriale-n-576-del-02-05-2023" target="_blank" class="grassetto">PRIN 2022</a> e
+                   <a href="https://www.mur.gov.it/it/atti-e-normativa/decreti-di-ammissione-al-finanziamento-bando-prin-pnrr-decreto-direttoriale-n-1409" target="_blank" class="grassetto">PRIN 2022 PNRR</a>.
+                </p>
+                <p>Per ogni progetto abbiamo riportato il titolo, il rispettivo codice unico, l'istituzione capofila del progetto e il finanziamento pubblico ricevuto</p>
+            </div>
+        </div>
+
+        <h2>Note metodologiche</h2>
+
+        <div id="metodologia">
+            <div>
+                <h3>Metodologia su Italian Digital Humanies Projects</h3>
+                <p>
+                    Una volta compresa la semantica dei dati, abbiamo proceduto manualmente al recupero delle informazioni
+                    mancanti per alcuni progetti, quali l'anno di pubblicazione e l'istituzione promotrice, dunque
+                    all'eliminazione delle colonne non utili all'analisi (riferimenti web e informazioni di stato su di essi,
+                    note, provenienza).
+                </p>
+                <p>
+                    Assumento che l'anno in cui un progetto è stato "visto per la prima volta online" coincida con
+                    l'anno in cui il progetto è stato pubblicato, abbiamo creato l'attributo <span class="corsivo">anno</span>
+                    a partire dall'attributo <span class="corsivo">url first seen</span> 
+                <p>
+                    Abbiamo adottato i seguenti criteri per risolvere eventuali conflitti tra i dati:
+                <ol>
+                <li>Considerando che il progetto vuole studiare la situazione delle DH in Italia, sono stati eliminati i progetti che facevano capo esclusivamente a istituzioni straniere;</li>
+                <li>I progetti sviluppati da istituzioni straniere in collaborazione con istituzioni italiane sono stati considerati come esclusivi dell'istituzione italiana;</li>
+                <li>I progetti sviluppati in collaborazione tra più istituzioni italiane, per esigenza, sono stati considerati come esclusivi dell'istituzione capofila del progetto.</li>
+                </p>
+
+                <p>
+                    Si è proceduto infine alla formattazione dei nomi delle istituzioni, portandole ad un'unica forma.
+                </p>
+                <p>
+                    La maggior parte delle operazioni è stata svolta sfruttando la libreria pandas con python.
+                </p>
+            </div>
+
+            <div>
+                <h3>Metodologia su Mapping digital humanities projects in Spain</h3>
+                <p>
+                    Per quanto riguarda il dataset spagnolo, contenente informazioni pure più dettagliate rispetto a quello italiano e maggiormente omogenee, abbiamo proceduto innanzitutto all'eliminazione degli attributi non utili ai fini dell'analisi (codici progetto, programma e subprogramma, entità finanziatrice, bando di finanziamento, data d'ultimo aggiornamento). Abbiamo creato il campo <span class="corsivo">anno</span> derivandolo dalla data di fine progetto.
+                </p>
+                <p>
+                    La maggior parte delle operazioni è stata svolta sfruttando la libreria pandas con python.
+                </p>
+            </div>
+            <div>
+                <h3>Metodologia su PRIN 2022 e PRIN 2022 PNRR</h3>
+                <p>
+                    Per quanto riguarda il bando PRIN 2022 PNRR, i vari progetti finanziati nei settori ERC
+                    riferiti ad aree disciplinari riconducibili alle DH (Social and Humanities) sono stati
+                    verificati preliminarmente e manualmente tramite i rispettivi riferimenti online.
+                </p>
+                <p>
+                   Per quanto concerne, invece, il bando PRIN 2022, 
+                   a partire dagli allegati C e D presenti sul sito del Ministero dell'Università e della Ricerca,
+                   abbiamo utilizzato delle tecniche di <span class="corsivo">web scraping</span> per formare un dataset.
+                </p>
+                <p>
+                    Per quest'ultimo dataset è stata necessaria una pulizia maggiore dei dati: dalla correzione
+                    del formato del finanziamento al filtraggio dei progetti DH tramite parole chiave legate alle 
+                    applicazioni digitali, alla linguistica computazionale e all'analisi testuale, alla geografia
+                    digitale, alla cartografia e all'archeologia: da più di 1000 progetti risultati dallo scraping,
+                    quindi, il sistema di filtro con parola chiave ha ridotto i progetti di DH a 51.
+                </p>
+                <p>
+                    Per lo scraping è stata utilizzata la libreria playwright. Per la pulizia e l'analisi dei dati
+                    è stata utilizzata la libreria pandas con python.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="footer">
+        <a href="https://www.fileli.unipi.it/informatica-umanistica-lm/" target="_blank">
+            <span class="grassetto">Università di Pisa <br>
+            Corso di laurea in Informatica Umanistica</span>
+            <br>
+            <span>Anno accademico 2025-2026</span>
+        </a>
+
+        <div id="cont_autori">
+            <a href="about.html">
+                <span class="grassetto">Autori</span>
+                <br>
+                <span><a href="mailto:l.ferrante9@studenti.unipi.it">Lorenzo Ferrante</a>
+                <br>
+                <span><a href="mailto:s.solimani1@studenti.unipi.it">Saverio Solimani</a></span>
+            </a>
+        </div>
+
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+            <span class="grassetto">Licenza</span>
+            <br>
+            <span>CC BY NC SA</span>
+        </a>
+    </div>
+</body>
+
+
+</html>
